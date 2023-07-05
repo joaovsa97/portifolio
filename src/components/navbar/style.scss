@@ -1,0 +1,45 @@
+@import "../../App.scss";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: $white;
+  color: $blue;
+
+  height: 40px;
+  padding: 10px 0 10px 40px;
+
+  overflow: hidden;
+
+  .logo {
+    width: 80px;
+
+    cursor: pointer;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 40px;
+
+    button {
+      border: none;
+      background-color: rgba(255, 255, 255, 0);
+
+      font-weight: bold;
+      font-size: 20px;
+      color: #0c7b93;
+
+      cursor: pointer;
+    }
+  }
+
+  .pattern {
+    height: 120px;
+
+    position: relative;
+
+    right: -35px;
+  }
+}

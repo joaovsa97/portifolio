@@ -1,4 +1,4 @@
-import "./style.scss"
+import "./style.scss";
 
 const Card = (props) => {
   //   const { title, desc, link } = props;
@@ -21,6 +21,9 @@ const Card = (props) => {
             Blanditiis, quisquam.
           </span>
         </div>
+      </div>
+      <div className="card-footer">
+        <button>Ver Mais</button>
       </div>
     </div>
   );

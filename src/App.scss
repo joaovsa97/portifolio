@@ -3,7 +3,8 @@ $blue-light: #00a8cc;
 $blue-dark-2: #142850;
 $blue-dark-1: #27496d;
 $white: #ffffff;
-$green: #739c1f;
+$green-dark: #739c1f;
+$green-light: #7fb90a;
 $red: #9c2610;
 
 ::-webkit-scrollbar {
@@ -22,6 +23,7 @@ $red: #9c2610;
   margin: 0;
   padding: 0;
   font-family: "Maven Pro", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .App {

@@ -11,7 +11,7 @@ import photo from "../../assets/myphoto.svg";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="my-photo">
         <img src={photo} alt="" />
       </div>

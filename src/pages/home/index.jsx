@@ -3,7 +3,7 @@ import myPhoto from "../../assets/myphoto.svg";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home" id="home">
         <div className="my-photo">
           <img src={myPhoto} alt="" />
         </div>

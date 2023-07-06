@@ -1,13 +1,36 @@
 @import "../../App.scss";
 
 .projects {
-  height: calc(100vh - 60px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: calc(100vh - 60px);
+  
+  h1{
+    margin: 5rem 2rem 2rem 2rem;
+  }
+
   .card-container {
-    padding: 20px;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 20px 30px;
     grid-template-columns: auto auto auto;
     align-content: center;
     justify-items: center;
+
+    padding: 20px 5rem;
+
+    .card-footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+
+      button{
+        padding: 4px 40px;
+      }
+    }
   }
 }

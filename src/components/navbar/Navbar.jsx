@@ -5,11 +5,13 @@ import patternLight from "../../assets/navbar-pattern-light.svg";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <img className="logo" src={logoLight} alt="logo" />
+      <a href="#home">
+        <img className="logo" src={logoLight} alt="logo" />
+      </a>
       <div className="navigation">
-        <button>About Me</button>
-        <button>My Projects</button>
-        <button>Contact Me</button>
+        <a href="#about">Sobre</a>
+        <a href="#projects">Meus Projetos</a>
+        <a href="#contacts">Contatos</a>
       </div>
       <img className="pattern" src={patternLight} alt="" />
     </div>

@@ -1,10 +1,10 @@
-import "./style.scss"
-import logoLight from "../../assets/logo-light.svg"
-import patternLight from "../../assets/navbar-pattern-light.svg"
+import "./style.scss";
+import logoLight from "../../assets/logo-light.svg";
+import patternLight from "../../assets/navbar-pattern-light.svg";
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
+    <div className="navbar">
       <img className="logo" src={logoLight} alt="logo" />
       <div className="navigation">
         <button>About Me</button>
@@ -13,7 +13,7 @@ const Navbar = () => {
       </div>
       <img className="pattern" src={patternLight} alt="" />
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

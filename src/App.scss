@@ -1,11 +1,10 @@
-$bg-light: #142850;
-$bg-dark: #27496D;
-$blue: #00A8CC;
+$blue: #0C7B93;
+$blue-light: #00A8CC;
+$blue-dark-2: #142850;
+$blue-dark-1: #27496D;
 $white: #FFFFFF;
-$success: #739C1F;
-$danger: #9C2610;
-$bg-card-light: #0C7B93;
-$bg-card-dark: #00A8CC;
+$green: #739C1F;
+$red: #9C2610;
 
 * {
   margin: 0;
@@ -14,7 +13,7 @@ $bg-card-dark: #00A8CC;
 }
 
 .App{
-  background-color: $bg-light;
+  background-color: $blue;
   color: $white;
 
   display: flex;

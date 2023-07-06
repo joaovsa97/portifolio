@@ -1,9 +1,19 @@
-import "./style.scss"
+import "./style.scss";
+import myPhoto from "../../assets/myphoto.svg";
 
 const Home = () => {
   return (
-    <div className='container'>index</div>
-  )
-}
+    <div className="home">
+        <div className="my-photo">
+          <img src={myPhoto} alt="" />
+        </div>
+        <div className="content">
+          <span>
+            Bem Vindo ao meu <b>Portifólio</b>!
+          </span>
+        </div>
+      </div>
+  );
+};
 
-export default Home
+export default Home;

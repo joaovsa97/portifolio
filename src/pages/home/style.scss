@@ -1,5 +1,22 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: calc(100vh - 60px);
+
+    .my-photo {
+      display: flex;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      span {
+        font-size: 3rem;
+      }
+    }
+  }

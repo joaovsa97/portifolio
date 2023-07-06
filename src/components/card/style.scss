@@ -1,0 +1,24 @@
+@import "../../App.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 260px;
+  padding: 5px;
+  border-radius: 8px;
+
+  background-color: $white;
+  color: $blue-dark-1;
+
+  .card-header {
+    height: inherit;
+
+    img {
+      border-radius: 8px;
+      background-color: red;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

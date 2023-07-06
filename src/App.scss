@@ -1,10 +1,22 @@
-$blue: #0C7B93;
-$blue-light: #00A8CC;
+$blue: #0c7b93;
+$blue-light: #00a8cc;
 $blue-dark-2: #142850;
-$blue-dark-1: #27496D;
-$white: #FFFFFF;
-$green: #739C1F;
-$red: #9C2610;
+$blue-dark-1: #27496d;
+$white: #ffffff;
+$green: #739c1f;
+$red: #9c2610;
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid $white;
+  background-clip: content-box;
+  background: $blue;
+}
 
 * {
   margin: 0;
@@ -12,12 +24,12 @@ $red: #9C2610;
   font-family: "Maven Pro", sans-serif;
 }
 
-.App{
+.App {
   background-color: $blue;
   color: $white;
 
   display: flex;
   flex-direction: column;
-  
+
   min-height: 100vh;
 }

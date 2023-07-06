@@ -20,6 +20,8 @@
     flex-direction: column;
     justify-content: space-evenly;
 
+    border-radius: 12px;
+
     .bio {
       background-color: $white;
       color: $blue-dark-1;
@@ -50,7 +52,7 @@
         img {
           position: relative;
           margin: 8px;
-          height: 80px;
+          height: 72px;
         }
       }
       .holder {

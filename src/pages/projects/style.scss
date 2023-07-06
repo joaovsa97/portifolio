@@ -1,0 +1,13 @@
+@import "../../App.scss";
+
+.projects {
+  height: calc(100vh - 60px);
+  .card-container {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    justify-items: center;
+  }
+}

@@ -1,24 +1,22 @@
 import "./style.scss";
 
 const Card = (props) => {
-  //   const { title, desc, link } = props;
+    const { title, desc, image } = props;
 
   return (
     <div className="card">
       <div className="card-header">
-        <img src="" alt="" />
+        <img src={image} alt="" />
       </div>
       <div className="card-body">
         <div className="title">
           <span>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste,
-            vero.
+            {title}
           </span>
         </div>
         <div className="desc">
           <span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Blanditiis, quisquam.
+            {desc}
           </span>
         </div>
       </div>

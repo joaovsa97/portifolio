@@ -11,12 +11,16 @@ const Card = (props) => {
       <div className="card-body">
         <div className="title">
           <span>
-            {title}
+            <h3>
+              title
+              </h3>
+            {/* {title} */}
           </span>
         </div>
         <div className="desc">
           <span>
-            {desc}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, facere?
+            {/* {desc} */}
           </span>
         </div>
       </div>

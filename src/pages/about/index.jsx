@@ -4,7 +4,7 @@ import cssLogo from "../../assets/css-logo.svg";
 import htmlLogo from "../../assets/html-logo.svg";
 import jsLogo from "../../assets/javascript-logo.svg";
 import mongodbLogo from "../../assets/mongodb-logo.svg";
-import nodejsLogo from "../../assets/nodejs-logo.svg";
+import nodejsLogo from "../../assets/nodejs-logo-sharp.svg";
 import reactLogo from "../../assets/react-logo.svg";
 import vueLogo from "../../assets/vue-logo.svg";
 import photo from "../../assets/myphoto.svg";
@@ -47,17 +47,16 @@ const About = () => {
           </span>
         </div>
         <div className="skill">
-          <h1>Meus principais conhecimentos são:</h1>
+          {/* <h2>Meus principais conhecimentos são:</h2> */}
           <div className="logos">
-            <img src={cssLogo} alt="css" />
             <img src={htmlLogo} alt="html" />
+            <img src={cssLogo} alt="css" />
             <img src={jsLogo} alt="js" />
-            <img src={mongodbLogo} alt="mongodb" />
-            <img src={nodejsLogo} alt="nodejs" />
             <img src={reactLogo} alt="react" />
             <img src={vueLogo} alt="vue" />
+            <img src={nodejsLogo} alt="nodejs" />
+            <img src={mongodbLogo} alt="mongodb" />
           </div>
-          <div className="holder"></div>
         </div>
       </div>
     </div>

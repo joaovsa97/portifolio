@@ -9,14 +9,17 @@ $red: #9c2610;
 
 ::-webkit-scrollbar {
   width: 12px;
-  background: none;
+  background: $blue;
+  height: 50%;
+
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  border: 2px solid $white;
+  border: 1px solid $white;
   background-clip: content-box;
-  background: $blue;
+  background: $white;
+  height: 50%;
 }
 
 * {

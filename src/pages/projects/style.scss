@@ -1,7 +1,6 @@
 @import "../../App.scss";
 
 .projects {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,13 +12,19 @@
     position: fixed;
     top: 0;
     left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
     z-index: 999;
+
   }
-  
-  h1{
+
+  h1 {
     margin: 5rem 2rem 2rem 2rem;
   }
 
@@ -32,13 +37,13 @@
 
     padding: 20px 5rem;
 
-    .card-footer{
+    .card-footer {
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 12px;
 
-      button{
+      button {
         padding: 4px 40px;
       }
     }

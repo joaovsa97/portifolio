@@ -13,11 +13,9 @@
   color: $blue-dark-1;
 
   .card-header {
-    height: inherit;
 
     img {
       border-radius: 8px;
-      background-color: red;
       height: 160px;
       width: 100%;
     }
@@ -32,6 +30,11 @@
 
     min-height: 80px;
     text-align: center;
+
+    .desc{
+      height: 60px;
+      overflow: hidden;
+    }
   }
 
   .card-footer {

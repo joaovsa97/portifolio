@@ -14,15 +14,15 @@ const Projects = () => {
   };
 
   const handleCardClick = (project) => {
-    setSelectedProject(project)
-    toggleModal()
-  }
+    setSelectedProject(project);
+    toggleModal();
+  };
 
   useEffect(() => {
     async function fetchData() {
       try {
         const res = await axios.get(
-          "https://portifolio-77973-default-rtdb.firebaseio.com/projects/test/.json"
+          "https://portifolio-77973-default-rtdb.firebaseio.com/portifolio/.json"
         );
         setProjects(Object.values(res.data));
       } catch (error) {
@@ -44,6 +44,15 @@ const Projects = () => {
 
   return (
     <div className="projects" id="projects">
+      {isModalOpen && (
+        <div className="overlay">
+          <Modal
+            modalVisibility={isModalOpen}
+            onClose={toggleModal}
+            project={selectedProject}
+          />
+        </div>
+      )}
       <h1>Meus projetos</h1>
 
       <div className="card-container">
@@ -57,8 +66,6 @@ const Projects = () => {
           </>
         ))}
       </div>
-      {isModalOpen && <div className="overlay" />}
-      <Modal modalVisibility={isModalOpen} onClose={toggleModal} project={selectedProject}/>
     </div>
   );
 };

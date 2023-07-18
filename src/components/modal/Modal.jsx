@@ -8,7 +8,7 @@ const Modal = ({ project, modalVisibility, onClose }) => {
   }
 
   // Utilize as informações do projeto para exibição no modal
-  const { title, desc, image } = project;
+  const { title, desc, image, link } = project;
 
   return (
     <div
@@ -22,14 +22,19 @@ const Modal = ({ project, modalVisibility, onClose }) => {
         </div>
         <div className="modal-body">
           <div className="image">
-            <img src={image} alt={title} />
+            <a href={link} target="_blank">
+              <img src={image} alt={title} id="image" />
+            </a>
+            <label htmlFor="image">
+              Clique na imagem para acessar a plaforma
+            </label>
           </div>
           <div className="desc">
             <span>{desc}</span>
           </div>
         </div>
         <div className="modal-footer">
-          <button onClick={onClose}>close</button>
+          <button onClick={onClose}>fechar</button>
         </div>
       </div>
     </div>

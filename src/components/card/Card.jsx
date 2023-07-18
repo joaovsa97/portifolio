@@ -1,31 +1,24 @@
 import "./style.scss";
 
-const Card = (props) => {
-    const { title, desc, image } = props;
+const Card = ({ project, onButtonClick }) => {
 
   return (
     <div className="card">
       <div className="card-header">
-        <img src={image} alt="" />
+        <img src={project.image} alt="" />
       </div>
       <div className="card-body">
         <div className="title">
           <span>
-            <h3>
-              title
-              </h3>
-            {/* {title} */}
+            <h3>{project.title}</h3>
           </span>
         </div>
         <div className="desc">
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, facere?
-            {/* {desc} */}
-          </span>
+          <span>{project.desc}</span>
         </div>
       </div>
       <div className="card-footer">
-        <button>Ver Mais</button>
+        <button onClick={onButtonClick}>Ver Mais</button>
       </div>
     </div>
   );

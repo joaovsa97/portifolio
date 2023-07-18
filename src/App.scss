@@ -30,6 +30,10 @@ $red: #9c2610;
 
 html{
   scroll-behavior: smooth;
+
+  .modal-open{
+    overflow: hidden;
+  }
 }
 
 .App {
@@ -39,4 +43,6 @@ html{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+
 }

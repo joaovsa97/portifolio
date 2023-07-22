@@ -31,9 +31,12 @@
     min-height: 80px;
     text-align: center;
 
-    .desc{
+    .caption{
+      display: flex;
+      align-items: center;
       height: 60px;
       overflow: hidden;
+      padding: 8px;
     }
   }
 

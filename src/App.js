@@ -16,9 +16,7 @@ function App() {
       <About />
       <div className="space"></div>
       <Projects />
-      <div className="space"></div>
       <Contact />
-      <div className="space"></div>
     </div>
   );
 }

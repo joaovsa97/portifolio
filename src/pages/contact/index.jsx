@@ -8,9 +8,10 @@ import "./style.scss";
 const Contact = () => {
   return (
     <div className="contact" id="contacts">
+      <div className="divider"></div>
+      <div className="infos">
       <div className="contacts">
-        <h1>Meus Contatos</h1>
-      <p>
+        <p>
           <span>Você pode me encontrar nas seguintes plataformas</span>
         </p>
         <a href="https://www.linkedin.com/in/joaoazevedo97/" target="_blank">
@@ -26,9 +27,18 @@ const Contact = () => {
           <img src={Whatsapp} alt="" />
         </a>
       </div>
-        <p><span>Ou por onde preferir nos contatos</span></p>
-        <p><span>E-mail: joaos.azevedo10@gmail.com</span></p>
-        <p><span>Telefone: (021)97929-4084</span></p>
+      <div className="contacts">
+        <p>
+          <span>Ou por onde preferir, utilizando os seguintes contatos:</span>
+        </p>
+        <p>
+          <span>E-mail: joaos.azevedo10@gmail.com</span>
+        </p>
+        <p>
+          <span>Telefone: (021)97929-4084</span>
+        </p>
+      </div>
+      </div>
     </div>
   );
 };

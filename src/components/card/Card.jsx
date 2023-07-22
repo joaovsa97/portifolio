@@ -13,8 +13,8 @@ const Card = ({ project, onButtonClick }) => {
             <h3>{project.title}</h3>
           </span>
         </div>
-        <div className="desc">
-          <span>{project.desc}</span>
+        <div className="caption">
+          <span>{project.caption}</span>
         </div>
       </div>
       <div className="card-footer">

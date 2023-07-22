@@ -30,7 +30,6 @@ const Projects = () => {
       }
     }
     fetchData();
-    console.log(typeof projects);
   }, []);
 
   useEffect(() => {

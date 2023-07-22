@@ -7,14 +7,12 @@ const Modal = ({ project, modalVisibility, onClose }) => {
     return null;
   }
 
-  // Utilize as informações do projeto para exibição no modal
   const { title, desc, image, link } = project;
 
   return (
     <div
       style={{ display: modalVisibility ? "flex" : "none" }}
       className="modal"
-      onClick={onClose}
     >
       <div className="container">
         <div className="modal-header">
@@ -30,11 +28,11 @@ const Modal = ({ project, modalVisibility, onClose }) => {
             </label>
           </div>
           <div className="desc">
-            <span>{desc}</span>
+            {desc}
           </div>
         </div>
         <div className="modal-footer">
-          <button onClick={onClose}>fechar</button>
+          <button onClick={onClose}>Fechar</button>
         </div>
       </div>
     </div>

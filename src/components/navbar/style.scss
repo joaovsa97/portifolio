@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    width: 100%;
 
     a {
       text-decoration: none;
@@ -41,6 +41,11 @@
 
       cursor: pointer;
     }
+
+    .drop {
+      display: flex;
+      gap: 20px 40px;
+    }
   }
 
   .pattern {
@@ -49,5 +54,20 @@
     position: relative;
 
     right: -35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 10px;
+
+    .navigation {
+      .drop {
+        display: none;
+      }
+    }
+    .pattern{
+      display: none;
+    }
   }
 }

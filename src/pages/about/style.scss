@@ -23,9 +23,9 @@
 
     .bio {
       overflow: auto;
-      margin: 0 60px 0 0;
+      margin-right: 60px;
       scroll-behavior: smooth;
-      
+
       span {
         text-indent: 10px;
         font-size: 19px;
@@ -57,6 +57,55 @@
           position: relative;
           margin: 8px;
           height: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .my-photo {
+      height: 200px;
+
+      img {
+        height: inherit;
+      }
+    }
+    .infos {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      
+      .bio{
+        margin-right: 0;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        width: 100%;
+
+        span{
+          padding: 0;
+        }
+
+      }
+
+      .skill {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        .logos {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
         }
       }
     }

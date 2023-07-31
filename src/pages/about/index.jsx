@@ -47,7 +47,6 @@ const About = () => {
           </span>
         </div>
         <div className="skill">
-          {/* <h2>Meus principais conhecimentos são:</h2> */}
           <div className="logos">
             <img src={htmlLogo} alt="html" />
             <img src={cssLogo} alt="css" />

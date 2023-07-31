@@ -1,4 +1,4 @@
-import { useState } from "react";
+import DOMPurify from "dompurify";
 
 import "./style.scss";
 
@@ -20,15 +20,14 @@ const Modal = ({ project, modalVisibility, onClose }) => {
         </div>
         <div className="modal-body">
           <div className="image">
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" rel="noreferrer">
               <img src={image} alt={title} id="image" />
             </a>
             <label htmlFor="image">
               Clique na imagem para acessar a plaforma
             </label>
           </div>
-          <div className="desc">
-            {desc}
+          <div className="desc" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(desc)}}>
           </div>
         </div>
         <div className="modal-footer">

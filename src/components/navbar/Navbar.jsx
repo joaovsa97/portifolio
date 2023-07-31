@@ -9,9 +9,11 @@ const Navbar = () => {
         <img className="logo" src={logoLight} alt="logo" />
       </a>
       <div className="navigation">
-        <a href="#about">Sobre</a>
-        <a href="#projects">Meus Projetos</a>
-        <a href="#contacts">Contatos</a>
+        <div className="drop">
+          <a href="#about">Sobre</a>
+          <a href="#projects">Meus Projetos</a>
+          <a href="#contacts">Contatos</a>
+        </div>
       </div>
       <img className="pattern" src={patternLight} alt="" />
     </div>

@@ -14,16 +14,16 @@ const Contact = () => {
         <p>
           <span>Você pode me encontrar nas seguintes plataformas</span>
         </p>
-        <a href="https://www.linkedin.com/in/joaoazevedo97/" target="_blank">
+        <a href="https://www.linkedin.com/in/joaoazevedo97/" target="_blank" rel="noreferrer">
           <img src={Linkedin} alt="" />
         </a>
-        <a href="https://github.com/joaovsa97" target="_blank">
+        <a href="https://github.com/joaovsa97" target="_blank" rel="noreferrer">
           <img src={Github} alt="" />
         </a>
-        <a href="mailto:joaos.azevedo10@gmail.com" target="_blank">
+        <a href="mailto:joaos.azevedo10@gmail.com" target="_blank" rel="noreferrer">
           <img src={Gmail} alt="" />
         </a>
-        <a href="https://wa.me/+55021979294084" target="_blank">
+        <a href="https://wa.me/+55021979294084" target="_blank" rel="noreferrer">
           <img src={Whatsapp} alt="" />
         </a>
       </div>

@@ -1,19 +1,16 @@
 import "./style.scss";
-import myPhoto from "../../assets/myphoto.svg";
 
 const Home = () => {
   return (
     <div className="home" id="home">
-      <div className="my-photo">
-        <img src={myPhoto} alt="" />
-      </div>
       <div className="content">
-        <span>
-          <h4>Bem Vindo</h4>
-          <p>
-            ao meu <b>Portifólio</b>!
-          </p>
-        </span>
+        <h1>Olá, me chamo João Vitor,</h1>
+        <p>
+            Sejam bem-vindos ao meu <b>Portifólio pessoal</b>!
+        </p>
+        <p>
+          Sou um <b>Desenvolvedor FullStack</b> com foco em <b>Aplicações Web</b>.
+        </p>
       </div>
     </div>
   );

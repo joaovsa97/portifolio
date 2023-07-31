@@ -60,7 +60,7 @@ const Projects = () => {
             <Card
               onButtonClick={() => handleCardClick(project)}
               project={project}
-              key={project.name}
+              key={project.id}
             />
           </>
         ))}

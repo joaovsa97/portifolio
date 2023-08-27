@@ -3,7 +3,6 @@ import Card from "../../components/card/Card.jsx";
 import Modal from "../../components/modal/Modal.jsx";
 import axios from "axios";
 import "./style.scss";
-import image from "../../assets/images/"
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
